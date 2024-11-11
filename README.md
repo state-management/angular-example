@@ -12,6 +12,27 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
+### Build the simple-state-machine
+`cd /pathTo/simple-state-machine`
+
+`npm run build`
+
+`npm pack`
+
+### Build the ngx-state-machine
+`cd /pathTo/ngx-state-machine`
+
+`npm install ../simple-state-machine/simple-state-machine-1.0.0.tgz`
+
+`npm run build`
+
+`npm pack`
+
+### Build this project
+`cd /pathTo/thisProject`
+
+`npm install ../../ngx-state-machine/ngx-state-machine-1.0.0.tgz --force`
+
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
