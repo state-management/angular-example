@@ -1,48 +1,44 @@
-# AngularExample
+# Angular Example using State Machine
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+This is an example project demonstrating how to use the
+[**ngx-state-machine**](https://www.npmjs.com/package/@state-management/ngx-state-machine).
+library with React. The project showcases:
 
-## Development server
+- Injecting the StateMachine using Angular Dependency Injection
+- Subscribing to state changes using the injected StateMachine.
+- Dispatching commands using the injected StateMachine.
+- Unit testing Angular components that use StateMachine.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+The **ngx-state-machine** is an Angular specific wrapper for the core library, [simple-state-machine](https://www.npmjs.com/package/@state-management/simple-state-machine).
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
+- **State Management**: Powered by `@state-management/state-machine-react`, this project integrates a simple yet powerful state management system.
+- **Injecting StateMachine**: Includes examples of injecting the StateMachine using Angular dependency injection.
+- **State Manipulation**: Demonstrates `dispatching` commands to execute logic and modify state, and `observing` state changes and modifying UI accordingly.
+- **Unit Testing**: Demonstrates how to unit test Angular components that use state management.
 
-## Build
 
-### Build the simple-state-machine
-`cd /pathTo/simple-state-machine`
+## Prerequisites
+Make sure you have the following installed:
+- Node.js (16.x or later)
+- npm (8.x or later)
 
-`npm run build`
 
-`npm pack`
+## Getting Started
 
-### Build the ngx-state-machine
-`cd /pathTo/ngx-state-machine`
+### 1. Install Dependencies
+Clone the repository and install the required dependencies:
+```bash
+npm install
+```
 
-`npm install ../simple-state-machine/simple-state-machine-1.0.0.tgz`
+### 2. Run the application
+```bash
+npm run start
+```
 
-`npm run build`
-
-`npm pack`
-
-### Build this project
-`cd /pathTo/thisProject`
-
-`npm install ../../ngx-state-machine/ngx-state-machine-1.0.0.tgz --force`
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### 3. Run the unit tests
+```bash
+npm run test
+```
