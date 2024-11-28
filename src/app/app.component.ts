@@ -4,8 +4,8 @@ import {CounterControlComponent} from './counter-control/counter-control.compone
 import {CounterDisplayComponent} from './counter-display/counter-display.component';
 import {CommonModule} from '@angular/common';
 import {SetInitialCounter} from './commands/set-initial-counter.command';
-import {StateMachine} from 'ngx-state-machine';
-import {provideStateMachine} from 'ngx-state-machine';
+import {StateMachine} from '@state-management/ngx-state-machine';
+import {provideStateMachine} from '@state-management/ngx-state-machine';
 
 @Component({
   selector: 'app-root',

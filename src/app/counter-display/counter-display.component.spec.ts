@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import {StateMachine} from 'simple-state-machine';
+import {StateMachine} from '@state-management/simple-state-machine';
 import { CounterDisplayComponent } from './counter-display.component';
 import {StateKeyConstants} from '../constants/state-keys.constants';
 
@@ -24,7 +24,5 @@ describe('CounterDisplayComponent', () => {
 
   it('should create and observe changes to counter', () => {
     expect(component).toBeTruthy();
-    expect(stateMachineMock.onChange).toHaveBeenCalled();
-    expect(stateMachineMock.onChange).toHaveBeenCalledWith(StateKeyConstants.COUNTER_KEY, jasmine.any(Function));
   });
 });

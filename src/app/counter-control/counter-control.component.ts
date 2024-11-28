@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {StateMachine} from 'ngx-state-machine';
+import {StateMachine} from '@state-management/ngx-state-machine';
 import {UpdateCounter} from '../commands/update-counter.command';
 
 @Component({

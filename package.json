@@ -1,6 +1,7 @@
 {
   "name": "angular-example",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "A sample angular project showing the use of @state-management/ngx-state-machine.",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -18,7 +19,7 @@
     "@angular/platform-browser": "^18.2.0",
     "@angular/platform-browser-dynamic": "^18.2.0",
     "@angular/router": "^18.2.0",
-    "ngx-state-machine": "file:../../ngx-state-machine/ngx-state-machine-1.0.0.tgz",
+    "@state-management/ngx-state-machine": "1.0.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.10"
@@ -35,5 +36,15 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.5.2"
-  }
+  },
+  "keywords": [
+    "state-management",
+    "command-pattern",
+    "typescript",
+    "rxjs",
+    "example",
+    "angular"
+  ],
+  "author": "Gopakumar Nair",
+  "license": "MIT"
 }

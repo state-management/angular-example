@@ -1,5 +1,5 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
-import {StateMachine} from 'simple-state-machine';
+import {StateMachine} from '@state-management/simple-state-machine';
 import {CounterControlComponent} from './counter-control.component';
 import {UpdateCounter} from '../commands/update-counter.command';
 

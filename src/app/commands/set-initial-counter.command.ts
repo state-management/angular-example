@@ -1,4 +1,4 @@
-import {Command} from 'ngx-state-machine'
+import {Command} from '@state-management/ngx-state-machine'
 import {StateKeyConstants} from '../constants/state-keys.constants';
 
 export class SetInitialCounter extends Command<number> {

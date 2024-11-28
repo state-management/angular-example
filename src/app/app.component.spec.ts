@@ -1,6 +1,6 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 import {AppComponent} from './app.component';
-import {StateMachine} from 'simple-state-machine';
+import {StateMachine} from '@state-management/simple-state-machine';
 import {Component} from '@angular/core';
 import {SetInitialCounter} from './commands/set-initial-counter.command';
 
