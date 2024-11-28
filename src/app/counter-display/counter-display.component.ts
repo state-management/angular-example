@@ -1,7 +1,7 @@
-import {Component, OnDestroy} from '@angular/core';
+import {Component} from '@angular/core';
 import {StateKeyConstants} from '../constants/state-keys.constants';
 import {AsyncPipe} from '@angular/common';
-import {Observable, Subscription} from 'rxjs';
+import {Observable} from 'rxjs';
 import {StateMachine} from '@state-management/ngx-state-machine';
 
 @Component({
