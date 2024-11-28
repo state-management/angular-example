@@ -20,12 +20,8 @@ export class CounterDisplayComponent implements OnDestroy {
   constructor(private stateMachine: StateMachine) {
     this.counter$ = this.stateMachine.observe(StateKeyConstants.COUNTER_KEY);
 
-    this.subscription = this.stateMachine.onChange(StateKeyConstants.COUNTER_KEY, this.handleCounterChange);
   }
 
-  private handleCounterChange(counterValue: number) {
-      console.log('handleCounterChange > Counter value:', counterValue);
-  }
 
   ngOnDestroy(): void {
     if(this.subscription)
